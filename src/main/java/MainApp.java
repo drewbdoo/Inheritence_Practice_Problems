@@ -94,13 +94,21 @@ public class MainApp {
 //        System.out.println(juice.history()); // [1000.0, 988.7, 989.7]
 //
 
-        //Warehouse part 7
-        ProductWarehouseWithHistory juice = new ProductWarehouseWithHistory("Juice", 1000.0, 1000.0);
-        juice.takeFromWarehouse(11.3);
-        juice.addToWarehouse(1.0);
-//System.out.println(juice.history()); // [1000.0, 988.7, 989.7]
+//        //Warehouse part 7
+//        ProductWarehouseWithHistory juice = new ProductWarehouseWithHistory("Juice", 1000.0, 1000.0);
+//        juice.takeFromWarehouse(11.3);
+//        juice.addToWarehouse(1.0);
+//        juice.printAnalysis();
 
-        juice.printAnalysis();
+        //DifferentKindsOfBoxes part 1/2
+        BoxWithMaxWeight coffeeBox = new BoxWithMaxWeight(10);
+        coffeeBox.add(new Item("Saludo", 5));
+        coffeeBox.add(new Item("Pirkka", 5));
+        coffeeBox.add(new Item("Kopi Luwak", 5));
+
+        System.out.println(coffeeBox.isInBox(new Item("Saludo")));
+        System.out.println(coffeeBox.isInBox(new Item("Pirkka")));
+        System.out.println(coffeeBox.isInBox(new Item("Kopi Luwak")));
 
 
 
